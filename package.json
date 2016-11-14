@@ -1,16 +1,16 @@
 {
   "version": "1.2.25",
   "name": "paypal-nvp-api",
-  "description": "Node.js wrapper for the Paypal Name-Value Pair — NVP ",
+  "description": "Node.js wrapper for the Paypal Name-Value Pair — NVP, Monky patch for node v4.6.0",
   "homepage": "https://www.npmjs.com/package/paypal-nvp-api",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ndaidong/paypal-nvp-api.git"
+    "url": "git@github.com:tokyootakumode/paypal-nvp-api.git"
   },
-  "author": "@ndaidong",
+  "author": "@nidate",
   "main": "./index.js",
   "engines": {
-    "node": ">= 6.0"
+    "node": ">= 4.6.0"
   },
   "scripts": {
     "lint": "eslint ./src ./test",
@@ -23,8 +23,8 @@
     "coveralls": "npm test && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
-    "bellajs": "6.*.*",
-    "promise-wtf": "1.*.*",
+    "bellajs": "5.1.3",
+    "bluebird": "^3.4.6",
     "request": "2.*.*"
   },
   "devDependencies": {

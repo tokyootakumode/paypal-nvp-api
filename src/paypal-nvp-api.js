@@ -4,8 +4,10 @@
  * Refer: https://developer.paypal.com/docs/classic/api/
  **/
 
+'use strict';
+
 var bella = require('bellajs');
-var Promise = require('promise-wtf');
+var Promise = require('bluebird');
 var request = require('request');
 
 var version = 204;
